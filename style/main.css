@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:ital,wght@0,300;0,500;1,400&display=swap');
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif; */
+body{
+    background:#F2F2F2;
+    display: flex;
+    justify-content: center;
+}
+
+.autorization{
+    /* position: relative;
+    top: 71px;
+    left: 440px; */
+    margin-top: 71px;
+    max-width: 474px;
+    height: 628px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(51, 51, 51, 0.04), 0px 4px 16px rgba(51, 51, 51, 0.08);
+    border-radius: 8px;
+    
+    
+}
+
+.autorization__head{
+    background: #FFFFFF;
+    padding: 32px;
+    border-bottom: 1px solid #F1F1F1;
+    border-radius: 8px 8px 0 0;
+}
+
+.autorization__name{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.autorization__but{
+    font-family: 'Roboto', sans-serif; 
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #111111;
+    width: 158px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 7px;
+
+}
+
+/* .autorization__but .registration{
+    position: absolute;
+    
+} */
+
+.autorization__but .registration::before{
+    content: '';
+    position: relative;
+    background-color: #6E41E2;
+    height: 2px;
+    width: 100%;
+    bottom: 0;
+
+}
+
+
+.autorization_body{
+    padding: 0 32px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.autorization__social_link{
+    
+    font-weight: 400;
+    background-color: #FAFAFA;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.autorization__social_link a{
+    width: 36px;
+    height: 36px;
+    background-color: #000;
+    margin: 8px;
+    
+}
+
+.form form{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.form form input{
+    padding: 16px 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(51, 51, 51, 0.04), 0px 4px 16px rgba(51, 51, 51, 0.08);
+}
+
+#accept{
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    border: 1px solid;  
+}
+
+.form form .submit{
+    padding: 10px 162px;
+    background: #6E41E2;
+    border-radius: 4px;
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 24px;
+}
+
+.form form .sign{
+    text-align: center;
+    margin-top: 18px;
+}

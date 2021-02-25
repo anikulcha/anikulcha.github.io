@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>log out</title>
+    <link rel="stylesheet" href="style/reset.css">
+    <link href="css/fontawesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+    <section class="autorization">
+        <div class="autorization__head">
+            <h1 class="autorization__name">Profile</h1>
+            <div class="autorization__but">
+                <a class="registration" href="">Registration</a>
+                <a class="signIn" href="">Sign In</a>
+            </div>
+        </div>
+        
+        <div class="autorization_body">
+            <div class="autorization__social_link">
+                <div>You can sign in with social</div>
+                <div class="icon_link">
+                    <a href="">
+                        <i class="fab fa-vk"></i>
+                    </a>
+                    <a href="">
+                        <img src="icon/facebook.png" alt="">
+                    </a>
+                    <a href="">
+                        <i class="fas fa-fish"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="form">
+                <form action="POST">
+                    <input type="text" name="name" id="name" placeholder="Your name">
+                    <input type="email" name="email" id="email" placeholder="E-mail">
+                    <input type="number" name="phone" id="phone" placeholder="Phone">
+                    <div><input type="checkbox" name="accept" id="accept">I accept the terms of the offer of <a href="#">the privacy policy</a></div>
+                    <button class="submit" type="submit">Registration</button>
+                    <a class="sign" href="#">Sign In</a>
+                </form>
+            </div>
+            
+        </div>
+    </section>
+</body>
+</html>

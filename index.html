@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header>
+        <div class="header__logo">Logo</div>
+        <div class="header__body">
+            <nav class="header__navigation">
+                <ul>
+                    <li>
+                        <a href="#">Free test</a>
+                    </li>
+                    <li>
+                        <a href="#">Catalog</a>
+                    </li>
+                    <li>
+                        <a href="#">Help</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__user">
+                <a href="#">Michael Browk</a>
+                <div class="name">
+                    <img class="user_avatar" src="img/leo.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="adaptive_menu">
+            <div class="burger">
+                <div class="line"></div>
+            </div>
+            <div class="burger_menu">
+                <ul>
+                    <li>
+                        <a href="#">Free test</a>
+                    </li>
+                    <li>
+                        <a href="#">Catalog</a>
+                    </li>
+                    <li>
+                        <a href="#">Help</a>
+                    </li>
+                </ul>
+                <div class="header__user">
+                    <a href="#">Michael Browk</a>
+                    <div class="name">
+                        <img class="user_avatar" src="img/leo.png" alt="">
+                    </div>
+                </div>
+                <!-- <button id="close">close</button> -->
+            </div>
+        </div>
+        
+    </header>
+    <section class="catalog">
+        <h1 class="catalog__heading">Course catalog</h1>
+        <div class="catalog__paragraph">Each course contains video lectures, tasks, and text materials. All courses viewed by you are <br> displayed in your personal account</div>
+        <div class="catalog__enter_inf">
+            <input type="text" name="search" class="search" placeholder="Search">
+            <select name="country" id="country" placeholder="your country">
+                <option value="USA">USA</option>
+                <option value="Ukraine">Ukraine</option>
+            </select>
+        </div>
+        
+        <div class="catalog__block">
+            <div class="catalog__card">
+                <div class="card__head background_one">
+                    <div class="progress">Progress 12%</div>
+                    <div class="ava"><img src="img/ava_black_woman.png" alt=""> <span>Alexa</span></div>
+                </div>
+                <h2 class="catalog__card_heading">Take exam in Mathematics at 100 points</h2>
+                <div class="catalog__info">
+                    <div class="user_activity">
+                        <a href="#"><img src="icon/Union.png" alt=""> 12 lessons</a> 
+                        <a href="#"><img src="icon/pen.png" alt=""> 12 tasks</a>
+                        <a href="#"><img src="icon/yt.png" alt=""> 30 minutes</a>
+                    </div>
+    
+                    <div class="buttons">
+                        <button class="but__cont">Continue</button>
+                        <a href="#" class="link__more">More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog__card">
+                <div class="card__head background_two">
+                    <div class="progress">Progress 12%</div>
+                    <div class="ava"><img src="img/man.png" alt=""> <span>Kathryn Nguyen</span></div>
+                </div>
+                <h2 class="catalog__card_heading">How buy new clothes without money in USA</h2>
+                <div class="catalog__info">
+                    <div class="user_activity">
+                        <a href="#"><img src="icon/Union.png" alt=""> 12 lessons</a> 
+                        <a href="#"><img src="icon/pen.png" alt=""> 12 tasks</a>
+                        <a href="#"><img src="icon/yt.png" alt=""> 30 minutes</a>
+                    </div>
+                        
+    
+                    <div class="buttons">
+                        <button class="but__cont">Continue</button>
+                        <a href="#" class="link__more">More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog__card">
+                <div class="card__head background_three">
+                    <div class="progress">Progress 12%</div>
+                    <div class="ava"><img src="img/manis.png" alt=""> <span>Diane Miles</span></div>
+                </div>
+                <h2 class="catalog__card_heading">Why people hate me?</h2>
+                <div class="catalog__info">
+                    <div class="user_activity">
+                        <a href="#"><img src="icon/Union.png" alt=""> 12 lessons</a> 
+                        <a href="#"><img src="icon/pen.png" alt=""> 12 tasks</a>
+                        <a href="#"><img src="icon/yt.png" alt=""> 30 minutes</a>
+                    </div>
+                    <div class="buttons">
+                        <button class="but__cont">Continue</button>
+                        <a href="#" class="link__more">More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        const burg_menu = document.querySelector('.adaptive_menu');
+        const close_menu = document.querySelector('#close');
+
+        burg_menu.onclick = function(){
+            document.querySelector('.burger_menu').style.display = "block";
+        }
+        close_menu.onclick = function() {
+            // document.querySelector('.adaptive_menu').parentNode.removeChild('document.querySelector('.burger_menu')');
+        }
+    </script>
+</body>
+</html>
