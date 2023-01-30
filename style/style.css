@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-around;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.start{
+    padding-top: 112px;
+}
+
+.title{
+    font-family: 'Roboto';
+    font-size: 71.3333px;
+    padding: 77px;
+}
+
+.list{
+    width: 366px;
+    font-size: 25.2291px;
+    line-height: 30px;
+    text-align: left;
+}
+
+.list li{
+    padding: 46px 0 46px 0;
+    position: relative;
+}
+
+.list li:before{
+    content: '';
+    position: absolute;
+    width: 145px;
+    height: 1px;
+    background-color: #000;
+    bottom: 0;
+    left: 0;
+}
+
+.list li:last-child:before{
+    display: none;
+}
+
+@media (min-width: 768px) { 
+    .list{
+        font-size: 20px;
+    }
+ }
+@media (min-width: 992px) {  /* Стили для ноутбуков и компьютеров с экранами в диапазоне 992px - 1199px */ }
